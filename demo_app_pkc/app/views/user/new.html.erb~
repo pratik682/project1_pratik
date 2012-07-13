@@ -1,0 +1,10 @@
+<% form_for @user do |f|%>
+<%= u.label	: 	name %>
+<%= u.text_field	: 	name %>
+<%= u.label	: 	email, 'Enter email-id' %>
+<%= u.text_field	: 	email %>
+<%=f.submit "SUBMIT"%>
+<%end%>
+
+
+
