@@ -4,6 +4,11 @@
   <tr>
     <th>Name</th>
     <th>Email</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Full Name</th>
+    <th>Contact Number</th>
+    <th>User Type</th>
     <th></th>
     <th></th>
   </tr>
@@ -12,11 +17,16 @@
   <tr>
     <td><%= u.name %></td>
     <td><%= u.email %></td>
+    <td><%= u.first_name %></td>
+    <td><%= u.last_name %></td>
+    <td><%= u.full_name %></td> 
+    <td><%= u.contact_no %></td>
+    <td><%= u.user_type %></td>
     <td><%= link_to 'Show', u %></td>
     <td><%= link_to 'Edit', edit_user_path(u) %></td>
     <td><%= link_to 'Delete', u, :confirm => 'Are you sure?',
                                      :method => :delete %></td>
-  </tr>
+   </tr>
 <% end %>
 </table>
  

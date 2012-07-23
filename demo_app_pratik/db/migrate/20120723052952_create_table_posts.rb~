@@ -1,0 +1,11 @@
+class CreateTablePosts < ActiveRecord::Migration
+  def up
+    add_column :posts do |p|
+      p.string :title
+      p.string :description
+      end
+  end
+
+  def down
+  end
+end

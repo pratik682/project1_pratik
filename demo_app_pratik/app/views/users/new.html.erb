@@ -1,7 +1,31 @@
 <%=form_for (@user) do |f| %>
 <%=f.label :name %>
 <%=f.text_field :name%>
+<br/>
+
 <%=f.label :Email, "Enter Email" %>
 <%=f.text_field :email %>
+<br/>
+
+<%=f.label :Email, "First Name" %>
+<%=f.text_field :first_name %>
+<br/>
+
+<%=f.label :Email, "Last Name" %>
+<%=f.text_field :last_name %>
+<br/>
+
+<%=f.label :Email, "Full Name" %>
+<%=f.text_field :full_name %>
+<br/>
+
+<%=f.label :Email, "Contact Number" %>
+<%=f.text_field :contact_no %>
+<br/>
+
+<%=f.label :Email, "User Type" %>
+<%=f.text_field :user_type %>
+<br/>
+
 <%=f.submit "Submit"%>
 <%end%>

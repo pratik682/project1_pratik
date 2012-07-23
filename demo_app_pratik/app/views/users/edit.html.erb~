@@ -1,7 +1,23 @@
 <%= form_for @user do |f| %>
 <%= f.label :name %>
-<%= f.text_field :@user.name %>
+<%= f.text_field :name %>
+<br/>
+
 <%= f.label :email, "Enter email" %>
-<%= f.text_field :@user.email %>
+<%= f.text_field :email %>
+<br/>
+
+<%= f.label :first_name, "Enter First Name" %>
+<%= f.text_field :first_name %>
+<br/>
+
+<%= f.label :last_name, "Enter Last Name" %>
+<%= f.text_field :last_name %>
+<br/>
+
+<%= f.label :full_name, "Enter Full Name" %>
+<%= f.text_field :full_name %>
+<br/>
+
 <%= f.submit "UPDATE" %>
 <%end%>

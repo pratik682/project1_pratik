@@ -4,3 +4,7 @@
 <br/>
 <label>Email :</label>
 <%=@user.email%>
+<br/>
+<br/>
+<br/>
+<%= link_to "GO TO HOME", users_path %>

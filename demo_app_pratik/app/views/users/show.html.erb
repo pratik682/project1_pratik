@@ -7,4 +7,10 @@
 <br/>
 <br/>
 <br/>
+<% @user.posts.each do |post| %>
+<%= post.title %>
+<% end %>
+<%= link_to 'Create A Post', new_user_post_path(@user) %>
+<br/>
+<br/>
 <%= link_to "GO TO HOME", users_path %>
